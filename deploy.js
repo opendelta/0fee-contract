@@ -70,14 +70,14 @@ if (cliOptions.help) {
 
   // Config
   const solidityFile = './smart_contract/etherdelta.sol';
-  const contractName = '0feeDEX';
+  const contractName = 'EtherDelta';
   const solcVersion = 'v0.4.9+commit.364da425';
   const address = cliOptions.address;
   const admin = cliOptions.admin;
   const feeAccount = cliOptions.feeAccount;
   const accountLevelsAddr = cliOptions.accountLevelsAddr;
   const feeMake = 0;
-  const feeTake = 0;
+  const feeTake = 3000000000000000;
   const feeRebate = 0;
   const gas = 2000000;
   const args = [admin, feeAccount, accountLevelsAddr, feeMake, feeTake, feeRebate];
